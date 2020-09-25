@@ -6,8 +6,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Russo+One&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/c8bffba3a9.js" crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script> copy button and custom alert massage ------------- -->   
     <title>Omar Nayef</title>
     <link rel="stylesheet" href="default.css">
     <link id="theme-style" rel="stylesheet" href="">
@@ -26,7 +26,7 @@
                             <div class="browser-dots" id="dot-3"></div>
                     </div>
                     <ul id="navigation">
-                        <li><a style="color: #1742b8;" href="#wrapper">Contact with me</a></li>
+                        <li><a class="link" href="#wrapper">Contact with me</a></li>
                     </ul>
                 </div>
                 <div class="left-colum">
@@ -67,7 +67,7 @@
 
                     <h4>My resume</h4>
 
-                    <a style="color: #1742b8;" href="Omar Nayef - Software Engineer.pdf" target="_blank">Download my resume</a>
+                    <a class="link" href="Omar Nayef - Software Engineer.pdf" target="_blank">Download my resume</a>
             </div>
             <div class="skills-wrapper">
                 <h4 style="margin: 20px;" >My Skills</h4>
@@ -129,7 +129,7 @@
                         <div class="post-preview">
                             <h6 class="post-title">Arab-Orphans-Committee-AOC</h6>
                             <p class="post-intro">graduate project and as volunteer work to Arab Orphans Committee</p>
-                            <a target="_blank" href="https://github.com/omar-aq/Arab-Orphans-Committee-AOC">Check out on github</a>
+                            <a class="link" target="_blank" href="https://github.com/omar-aq/Arab-Orphans-Committee-AOC">Check out on github</a>
                         </div>
                     </div>
                 </div>
@@ -140,7 +140,7 @@
                         <div class="post-preview">
                             <h6 class="post-title">Post title</h6>
                             <p class="post-intro">this is a sentence some more text</p>
-                            <a target="_blank" href="https://github.com/">Check out on github</a>
+                            <a class="link" target="_blank" href="https://github.com/">Check out on github</a>
                         </div>
                     </div>
                 </div>
@@ -151,7 +151,7 @@
                         <div class="post-preview">
                             <h6 class="post-title">Post title</h6>
                             <p class="post-intro">this is a sentence some more text</p>
-                            <a target="_blank" href="https://github.com/">Check out on github</a>
+                            <a class="link" target="_blank" href="https://github.com/">Check out on github</a>
                         </div>
                     </div>
                 </div>
@@ -164,40 +164,34 @@
             <h3 style="text-align: center;">Click it</h3>
             <div id="wrapper" class="wrapper">
                 <div class="button">
-                  <div class="icon">
-                      <a target="_blank" href="https://web.facebook.com/omar5666666">
+                    <a target="_blank" href="https://web.facebook.com/omar5666666">
+                        <div class="icon">
                           <i class="fab fa-facebook-f"></i></div>
-                      </a>
-                      <a target="_blank" href="https://web.facebook.com/omar5666666">
                           <span>Facebook</span>
-                      </a>
-                          </div>
-                      <div onclick="copyToClipboard('#p1')" class="button">
-                          <div class="icon">
-                              <i class="fas fa-at"></i>
-                          </div>
-                              <span>Gmail</span> <span id="p1">omar.1997aq@gmail.com</span>
-                      </div>
-                      <div class="button">
-                          <div class="icon">
-                              <a target="_blank" href="https://github.com/omar-aq">
-                                  <i class="fab fa-github"></i>
-                              </a>
-                          </div>
-                              <a target="_blank" href="https://github.com/omar-aq">
-                                  <span>Github</span>
-                              </a>
-                          </div>
-                      <div class="button">
-                          <div class="icon">
-                              <a target="_blank" href="https://www.linkedin.com/in/omar-abdel-2b00771a6/">
-                                  <i class="fab fa-linkedin"></i>
-                              </a>
-                          </div>
-                          <a target="_blank" href="https://www.linkedin.com/in/omar-abdel-2b00771a6/">
-                              <span>Linkedin</span>
-                          </a>
+                    </a>
                 </div>
+                <div id="email-btn" class="button">
+                    <div class="icon">
+                        <i class="fas fa-at"></i>
+                    </div>
+                    <span>Gmail</span>
+                </div>
+                <div class="button">
+                    <a target="_blank" href="https://github.com/omar-aq">
+                        <div class="icon">
+                            <i class="fab fa-github"></i>    
+                        </div>
+                        <span>Github</span>
+                    </a>
+                          </div>
+                <div class="button">
+                    <a target="_blank" href="https://www.linkedin.com/in/omar-abdel-2b00771a6/">
+                        <div class="icon">   
+                            <i class="fab fa-linkedin"></i>
+                        </div>
+                        <span>Linkedin</span>
+                    </a>
+                    </div>
               </div>
     </section>
     <script src="main.js"></script>

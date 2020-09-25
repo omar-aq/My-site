@@ -33,16 +33,21 @@ function changeTheme(mode){
 
     localStorage.setItem('theme', mode);
 }
-// copy button----------------------------------------
-function copyToClipboard(element) {
-    var $temp = $("<input>");
-    $("body").append($temp);
-    $temp.val($(element).text()).select();
-    document.execCommand("copy");
-    $temp.remove();
-    swal("send me email","Copied the text: omar.1997aq@gmail.com","success");
+let emailBtn = document.getElementById("email-btn");
+emailBtn.addEventListener('click', function(){
     window.open('mailto:omar.1997aq@gmail.com');
-  }
+})
+
+// copy button----------------------------------------
+// function copyToClipboard(element) {
+//     var $temp = $("<input>");
+//     $("body").append($temp);
+//     $temp.val($(element).text()).select();
+//     document.execCommand("copy");
+//     $temp.remove();
+//     swal("send me email","Copied the text: omar.1997aq@gmail.com","success");
+//     window.open('mailto:omar.1997aq@gmail.com');
+//   }
 
 // let submitBtn = document.getElementById('submit-btn');
 

@@ -13,6 +13,7 @@
 	--progressBar:#8534a3;
     --barBg:#E8E8E8;
     --iconColor:#fff;
+    --linkColor:#1742b8;
     
 }
 body *{
@@ -34,6 +35,9 @@ a {
     text-decoration: none;
     color: inherit;  
     font-family: 'Roboto Mono', monospace;
+}
+.link{
+    color:var(--linkColor);
 }
 ul {
     list-style: none;
@@ -196,8 +200,7 @@ p,li,span,label,input,textarea{
 	position: relative;
 }
 .card {
-    display: inline-block;
-    width: 270px;
+    width: 90%;
     padding: 4rem 1rem 7rem 1rem;
     background-color: var(--mainColor);
     position: relative;
